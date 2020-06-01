@@ -28,14 +28,23 @@ class Home extends StatelessWidget {
 //          ),
 //        ),
 
+//      body: Center(
+//        child: FlatButton(
+//          onPressed: () {
+//            print("You clicked me");
+//          },
+//          child: Text("Submit"),
+//          color: Colors.deepPurpleAccent,
+//          textColor: Colors.white,
+//        ),
+//      ),
+
       body: Center(
-        child: FlatButton(
-          onPressed: () {
-            print("You clicked me");
-          },
-          child: Text("Submit"),
-          color: Colors.deepPurpleAccent,
-          textColor: Colors.white,
+        child: RaisedButton.icon(
+          onPressed: () {},
+          icon: Icon(Icons.mail),
+          label: Text("mail me"),
+          color: Colors.amberAccent,
         ),
       ),
 
