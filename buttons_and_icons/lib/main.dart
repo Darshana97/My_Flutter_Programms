@@ -39,12 +39,23 @@ class Home extends StatelessWidget {
 //        ),
 //      ),
 
+      // body: Center(
+      //   child: RaisedButton.icon(
+      //     onPressed: () {},
+      //     icon: Icon(Icons.mail),
+      //     label: Text("mail me"),
+      //     color: Colors.amberAccent,
+      //   ),
+      // ),
+
       body: Center(
-        child: RaisedButton.icon(
-          onPressed: () {},
-          icon: Icon(Icons.mail),
-          label: Text("mail me"),
-          color: Colors.amberAccent,
+        child: IconButton(
+          onPressed: () {
+            print("You clicked me");
+          },
+          icon: Icon(Icons.print),
+          color: Colors.red,
+          iconSize: 50.0,
         ),
       ),
 
