@@ -12,13 +12,10 @@ class ExtractingWidget extends StatefulWidget {
 }
 
 class _ExtractingWidgetState extends State<ExtractingWidget> {
-
   List<Quote> quotes = [
-    Quote(text: "hello world",author: "Darshana"),
-    Quote(text: "software engineering",author: "pubudu"),
+    Quote(text: "hello world", author: "Darshana"),
+    Quote(text: "software engineering", author: "pubudu"),
   ];
-
-
 
   @override
   Widget build(BuildContext context) {
@@ -29,10 +26,8 @@ class _ExtractingWidgetState extends State<ExtractingWidget> {
         backgroundColor: Colors.amberAccent,
       ),
       body: Column(
-        children: quotes.map((quote)=>QuoteCard(quote:quote)).toList(),
+        children: quotes.map((quote) => QuoteCard(quote: quote)).toList(),
       ),
     );
   }
 }
-
-
