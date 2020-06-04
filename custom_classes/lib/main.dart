@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'quote.dart';
 
 void main() => runApp(MaterialApp(
-  home: CustomClasses(),
-));
+      home: CustomClasses(),
+    ));
 
 class CustomClasses extends StatefulWidget {
   @override
@@ -11,13 +11,10 @@ class CustomClasses extends StatefulWidget {
 }
 
 class _CustomClassesState extends State<CustomClasses> {
-
   List<Quote1> quotes = [
-    Quote1(text: "Hello world",author: "Darshana"),
-    Quote1(text: "Hello world",author: "achi")
+    Quote1(text: "Hello world", author: "Darshana"),
+    Quote1(text: "Hello world", author: "achi")
   ];
-
-
 
   @override
   Widget build(BuildContext context) {
@@ -28,9 +25,10 @@ class _CustomClassesState extends State<CustomClasses> {
         backgroundColor: Colors.redAccent,
       ),
       body: Column(
-        children: quotes.map((quote)=>Text('${quote.text} - ${quote.author}')).toList(),
+        children: quotes
+            .map((quote) => Text('${quote.text} - ${quote.author}'))
+            .toList(),
       ),
     );
   }
 }
-

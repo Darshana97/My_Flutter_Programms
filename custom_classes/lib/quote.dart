@@ -1,5 +1,4 @@
-class Quote1{
-
+class Quote1 {
   String text;
   String author;
 
@@ -8,10 +7,7 @@ class Quote1{
 //    this.author=author;
 //  }
 
-
-    Quote1({this.text,this.author});
-
-
+  Quote1({this.text, this.author});
 }
 
 //Quote myquote = Quote("Hello World", "Darshana");
